@@ -1,0 +1,324 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Menú de navegación */
+.menu-container {
+    width: 90%;
+    height: 80px;
+    background-color: #004d40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.menu-link {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    margin: 0 15px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.enlace:hover {
+    color: #ccc;
+}
+
+/* Secciones de contenido */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.inicio {
+    background: url('/img/inicio.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+
+/* Nuevo estilo para la sección de servicios */
+.servicios {
+    background-color: #004d40; /* Color unificado */
+}
+
+.galeria {
+    background-color: #004d40; /* Color unificado */
+}
+
+.contacto {
+    background-color: #004d40; /* Color unificado */
+}
+
+/* Títulos */
+.empresa {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitulo {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el botón */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+/* Contenedor de servicios */
+.servicios-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.servicio-item {
+    flex-basis: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.servicio-item:hover {
+    transform: translateY(-10px);
+}
+
+.servicio-icon {
+    margin-bottom: 10px;
+}
+
+/* Estilos de la galería */
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.galeria-item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.galeria-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.galeria-img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos de contacto */
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+
+.contacto-izquierda {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contacto-info p {
+    margin: 10px 0;
+}
+
+.contacto-social a {
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.contacto-social a:hover {
+    color: #ccc;
+}
+
+.contacto-derecha {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.form-icon-header {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.form-group-names {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contacto-form input {
+    width: calc(100% - 30px);
+    padding: 15px 15px 15px 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contacto-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contacto-form input:focus {
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries para diseño responsive */
+@media (max-width: 1024px) {
+    /* 3 columnas para tabletas */
+    .galeria-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        justify-content: center;
+    }
+
+    .menu-link {
+        display: none;
+    }
+    
+    .contacto-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contacto-izquierda {
+        display: none;
+    }
+
+    .contacto-derecha {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    /* 1 columna para celulares */
+    .galeria-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
